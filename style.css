@@ -7,3 +7,124 @@
 }
 
 /* Write CSS code below */
+body{
+    background-color: #a6abad;
+}
+.main-content{
+    min-height: 1000px;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 300px 700px;
+    margin: 20px auto;
+}
+.main-content .left-section{
+    background-color: #242531;
+    grid-column: span 1 / auto;
+    padding: 1rem;
+    /* text-align: center; */
+    color: white;
+}
+.main-content .right-section{
+    background-color: #f7f7f7;
+    grid-column: span 1 / span 2;
+}
+.profile{
+    text-align: center;
+}
+.profile-image{
+    width: 60%;
+    border: 5px solid white;
+    border-radius: 30%;
+    display: block;
+    margin: auto;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media{
+    display: flex;
+    justify-content: space-around;
+}
+.icon svg{
+    height: 20px;
+}
+.personal-details li{
+    text-align: center;
+    padding-top: 5px;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-item{
+    height: 45px;
+}
+.skill-name{
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+    background-color: white;
+    border-radius: 4px;
+}
+/* .right-section{
+} */
+.right-main-content{
+    padding: 2rem 3rem;
+    /* border: 1px solid blue; */
+}
+.right-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+.sect{
+    margin-bottom: 25px;
+}
+.degree{
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+.degree-description{
+    margin-bottom: 5px;
+}
+.education-content{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 20px;
+}
+.school-name{
+    font-size: 0.8rem;
+    text-align: center;
+}
+@media only screen and (max-width:673px){
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
